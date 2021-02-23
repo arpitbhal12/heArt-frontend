@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Rouge+Script|Roboto&display=swap');
+
+.Logo {
+	color:rgba(73, 62, 62, 0.226);
+	font-family: 'Rouge Script', cursive;
+  position: relative;
+	top:0;
+	bottom: 0;
+	font-size: 165px;
+	line-height: 160px;
+	font-weight: normal;
+	margin-top: 200px;
+	text-align: center;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.Auth__Card {
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+  width: 70%;
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgb(255, 253, 253);
+}
+
+.App__Aside {
+    background: url(../../assets/grey.jpg);
+    opacity: 1;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 25px 40px;
+    background-color: rgb(197, 197, 197)
+  }
+  
+.App__Form {
+    z-index: 100;
+    width: 50%;
+    background-color: rgb(24, 23, 23);
+    padding: 20px 60px;
+    padding-left: 100px;
+    box-shadow: 5px 10px #888888;
+}
+
+
+.FormTitle {
+	color: #707c8b;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.FormTitle__Link {
+	color: #707c8b;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.7em;
+	margin: 0 10px;
+	padding-bottom: 5px;
+}
+
+.FormTitle__Link:first-child {
+	margin-left: 0;
+}
+
+.FormTitle__Link__Active {
+	color: white;
+	border-bottom: 1px solid #ced1d1;
+}
+
+.PageSwitcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3%;
+}
+
+.PageSwitcher__Item {
+  background-color: rgb(71, 71, 71);
+  color: rgb(253, 253, 253);
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: .9em;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.PageSwitcher__Item__Active {
+  background-color: rgb(197, 197, 197);
+  color: rgb(0, 0, 0);
+}
+
+.PageSwitcher__Item:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.PageSwitcher__Item:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.FormCenter {
+  margin-bottom: 100px;
+}
+
+.Floating {   
+  animation-name: floating; 
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+} 
+
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  { transform: translate(0, 15px); } 
+  100%   { transform: translate(0, -0px); }     
+} 
