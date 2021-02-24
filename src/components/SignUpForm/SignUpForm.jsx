@@ -120,7 +120,7 @@ class SignUpForm extends Component {
 
   orderHandler = (event) => {
     event.preventDefault();
-	console.log("Fuck")
+    console.log("Fuck");
     this.setState({ loading: true });
     const formData = {};
     for (let formElementIdentifier in this.state.form) {
@@ -129,7 +129,7 @@ class SignUpForm extends Component {
       ].value;
     }
     const payload = {
-      ...formData
+      ...formData,
     };
     console.log(payload);
   };
@@ -177,7 +177,12 @@ class SignUpForm extends Component {
               Role:{" "}
             </label>
 
-            <select className={classes.FormField__Select} name="role" id="role" onChange={(event) => this.roleChangeHandler(event)}>
+            <select
+              className={classes.FormField__Select}
+              name="role"
+              id="role"
+              onChange={(event) => this.roleChangeHandler(event)}
+            >
               <option
                 className={classes.FormField__Select__Input}
                 value="artist"
@@ -209,7 +214,10 @@ class SignUpForm extends Component {
 				</div> */}
 
           <div className={classes.FormField}>
-            <button className={classes.FormField__Button + " mr-20"}  onClick={(event) => this.orderHandler(event)}>
+            <button
+              className={classes.FormField__Button + " mr-20"}
+              onClick={(event) => this.orderHandler(event)}
+            >
               Sign Up
             </button>{" "}
             <a href="#" className={classes.FormField__Link}>
