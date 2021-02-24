@@ -17,7 +17,6 @@
 .Auth__Card {
   display: flex;
   justify-content: center;
-  align-items: ce;
   width: 70%;
   height: 80%;
   margin-top: auto;
@@ -30,6 +29,7 @@
     opacity: 1;
     background-repeat: no-repeat;
     width: 50%;
+    height: 100vh;
     padding: 25px 40px;
     background-color: rgb(197, 197, 197)
   }
@@ -37,10 +37,12 @@
 .App__Form {
     z-index: 100;
     width: 50%;
+    height: 100vh;
     background-color: rgb(24, 23, 23);
     padding: 20px 60px;
     padding-left: 100px;
     box-shadow: 5px 10px #888888;
+    overflow: hidden;
 }
 
 
